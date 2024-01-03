@@ -11,9 +11,6 @@ spec:
       app: nginx
   strategy:
     type: Recreate
-    rollingUpdate:
-      maxSurge: 50%
-      maxUnavailable: 25%
   template:
     metadata:
       name: nginx
