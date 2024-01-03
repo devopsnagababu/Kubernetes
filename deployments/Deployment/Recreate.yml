@@ -25,7 +25,7 @@ spec:
        - name: nginx
          image: batchusivaji/devops:v1.0
          ports:
-           - ContainerPort: 80
+           - containerPort: 80
 
 ---
 apiVersion: v1
