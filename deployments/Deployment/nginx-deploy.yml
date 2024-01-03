@@ -7,14 +7,14 @@ metadata:
     kubernetes.io/change-cause: "batchusivaji/devops:v2.0"
 spec:
   minReadySeconds: 1
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 50%
+      maxSurge: 75%
       maxUnavailable: 25%
   template:
     metadata:
