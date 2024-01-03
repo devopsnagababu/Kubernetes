@@ -12,7 +12,7 @@ spec:
   strategy:
     type: Recreate
     rollingUpdate:
-      maxSurge: 25%
+      maxSurge: 50%
       maxUnavailable: 25%
   template:
     metadata:
