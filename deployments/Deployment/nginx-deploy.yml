@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: nginx-deploy
   annotations: 
-    kubernetes.io/change-cause: "batchusivaji/devops:v2.0"
+    kubernetes.io/change-cause: "batchusivaji/devops:v1.0"
 spec:
   minReadySeconds: 1
   replicas: 1
@@ -25,7 +25,7 @@ spec:
     spec:
       containers: 
        - name: nginx
-         image: batchusivaji/devops:v2.0
+         image: batchusivaji/devops:v1.0
          ports:
            - containerPort: 80
 ---
