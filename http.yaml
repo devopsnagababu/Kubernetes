@@ -1,0 +1,12 @@
+---
+apiversion: v1
+kind: Pod
+metadata: 
+  name: httpd-pod
+spec:
+  container:
+    name: httpd-con
+    image: httpd-2
+    ports: 
+      ContainerPort: 80
+      
