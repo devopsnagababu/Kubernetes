@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deploy
-  Annotations:  kubernetes.io/change-cause=batchusivaji/devops:v3.0
+  annotations: kubernetes.io/change-cause=batchusivaji/devops:v3.0
 spec:
   minReadySeconds: 1
   replicas: 4
