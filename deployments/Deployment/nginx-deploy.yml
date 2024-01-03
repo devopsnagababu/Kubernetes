@@ -23,7 +23,7 @@ spec:
     spec:
       containers: 
        - name: nginx
-         image: batchusivaji/devops:v1.0
+         image: batchusivaji/devops:v2.0
          ports:
            - containerPort: 80
 ---
