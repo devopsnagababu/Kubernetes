@@ -24,7 +24,7 @@ spec:
       containers:
         - name: nginx 
           image: nginx:1.25
-          command: ["/bin/bash", "-c", 'echo this is devops >/user/share/nginx/html/index.html && sleep 1d']
+          command: ["/bin/bash", "-c", 'echo this is devops >/usr/share/nginx/html/index.html && sleep 1d']
           ports:
             - containerPort: 80
                   
