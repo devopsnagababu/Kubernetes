@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: nopcommerce
-          image: nopcommerce/nopcommerce
+          image: babunaga/nopcommerce:1.0
           ports:
-            - containerPort: 80
+            - containerPort: 5000
 
 ---
 apiVersion: v1

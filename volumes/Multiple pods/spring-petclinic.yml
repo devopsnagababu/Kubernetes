@@ -14,7 +14,7 @@ spec:
        app: petclinic
    spec:
      - name: petclinic
-       image: springcommunity/spring-petclinic
+       image: 
        ports:
          - containerPort: 8080 
 
@@ -23,7 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: petclinic-service
-spec:  
+spec: 
   selector:
     app: petclinic
   type: NodePort 
