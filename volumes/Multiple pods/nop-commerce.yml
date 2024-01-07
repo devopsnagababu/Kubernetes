@@ -7,15 +7,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nopcommerce
+      app: nop-commerce
   template:
     metadata:
       labels:
-        app: nopcommerce
+        app: nop-commerce
     spec:
       containers:
-        - name: nopcommerce
-          image: nopcommerce/nopcommerce
+        - name: nop-commerce
+          image: nop-commerce/nop-commerce
           ports:
             - containerPort: 80
 
