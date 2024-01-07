@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nopcommerce-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nopcommerce
+  template:
+    metadata:
+      labels:
+        app: nopcommerce
+    spec:
+      containeres:
+        - name: nopcommerce
+          image: nopcommerce/nopcommerce
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nopcommerce-service
+spec: 
+  selector:
+    app: nopcommerce
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort:80             
+
+               
