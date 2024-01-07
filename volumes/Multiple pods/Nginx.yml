@@ -17,7 +17,7 @@ spec:
        - name: nginx
          image: nginx:1.25
          ports:
-          - containerport: 8080
+          - containerPort: 80
 
 
 #nginx-service.yml
