@@ -13,7 +13,7 @@ spec:
       labels:
         app: nopcommerce
     spec:
-      containeres:
+      containers:
         - name: nopcommerce
           image: nopcommerce/nopcommerce
           ports:
