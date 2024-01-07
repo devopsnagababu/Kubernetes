@@ -1,0 +1,33 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petclinic-deployment
+spec:
+ replicas: 1
+ selector:
+   matchLabels:
+     app: petclinic
+ template:
+   metadata: 
+     labels:
+       app: petclinic
+   spec:
+     - name: petclinic
+       image: springcommunity/spring-petclinic
+       ports:
+         - containerPort: 8080 
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: petclinic-service
+spec:  
+  selector:
+    app: petclinic
+  type: NodePort 
+  ports:
+    - protocol: TCP
+      port: 8080 
+
