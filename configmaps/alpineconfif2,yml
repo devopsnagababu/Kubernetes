@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine-config-env
+spec:
+  volumes:
+    - name: config
+      configMap:
+      name: dummy-cm
+  containers:
+    - volumeMounts:
+        - name: config
+          mountPath: /usr/share/nginx/html
+      name: alpine
+      image: nginx
+      args:
+        - sleep
+        - 1d  

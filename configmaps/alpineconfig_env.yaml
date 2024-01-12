@@ -10,7 +10,7 @@ spec:
       envFrom:
         - configMapRef:
             name: dummy-cm
-            key: key2
+          
       args:
         - sleep
         - 1d      

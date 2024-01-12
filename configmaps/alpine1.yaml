@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dummy-cm
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Your Page Title</title>
+    </head>
+    <body>
+        <h1>hai this is nagababu</h1>
+    </body>
+    </html>
+    
