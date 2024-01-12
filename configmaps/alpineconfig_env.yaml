@@ -12,6 +12,6 @@ spec:
             name: dummy-cm
             optional: false
       args:
-        - sleep:
+        - sleep
         - 1d      
 
