@@ -7,7 +7,7 @@ spec:
   volumes:
     - name: config
       configMap:
-      name: dummy-cm
+        name: dummy-cm
   containers:
     - volumeMounts:
         - name: config
