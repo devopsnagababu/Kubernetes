@@ -11,4 +11,7 @@ spec:
         - configMapRef:
             name: dummy-cm
             optional: false
+      args:
+        - sleep:
+          1d      
 
