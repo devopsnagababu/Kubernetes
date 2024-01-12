@@ -14,6 +14,6 @@ spec:
           mountPath: /usr/share/nginx/html
       name: alpine
       image: nginx
-      args:
-        - sleep
-        - 1d  
+      ports:
+        - name: nginx-svc
+          containerPort: 80 

@@ -5,10 +5,10 @@ metadata:
   name: nginx-svc
 spec:
   selector:
-    app: nginx
+    app: dev
   ports:
-    - name: nginx-svc
+    - name: svc
       port: 80
-      targetPort: 80
+      targetPort: nginx-svc
       protocol: TCP
-  type: LoadBalancer    
+  type: NodePort    
